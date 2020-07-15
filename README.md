@@ -1,6 +1,6 @@
 
 
-# Generative Latent Implicit Conditional Optimizationwhen Learning from Small Sample
+# Generative Latent Implicit Conditional Optimization when Learning from Small Sample
 If you find this repository useful in your research, please cite the following paper:
 
 
