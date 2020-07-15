@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import csv
-import glico_model
+import glob
+
 import time
 
 import easyargs
@@ -16,6 +17,7 @@ matplotlib.use('Agg')
 PACKAGE_PARENT = '..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 os.sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+import glico_model
 from glico_model.cifar10 import get_cifar10
 from glico_model.cifar100 import get_cifar100, manual_seed
 from cub2011 import Cub2011
@@ -121,7 +123,7 @@ def generic_train_classifier(model, optimizer, train_labeled_dataset, num_epochs
 				onehot_labels = one_hot(targets, n_classes)
 				loss = criterion(output, onehot_labels.cuda(), y_target)
 			elif loss_method == "ce_smooth":  # cross entrop smoothing
-				criterion = LabelSmoothinglico_modelss(n_classes, smoothing=0.1)
+				criterion = LabelSmoothingLoss(n_classes, smoothing=0.1)
 				loss = criterion(output, onehot_labels.long())
 			# targets=smooth_one_hot(targets,n_classes,smoothing=0.1).long()
 			# loss = criterion(output, targets)
@@ -322,10 +324,10 @@ def run_eval_(is_inter=False, debug=False, keyword="", epochs=200, d="", fewshot
 		netG = _netG(dim, aug_param['image_size'], 3, noise_projection, noise_projection)
 	paths = list()
 	print(f"{PATH}")
-	dirs = [d for d in glico_modelb.iglico_modelb(PATH)]
+	dirs = [d for d in glob.glob(PATH)]
 	print(dirs)
 	for dir in dirs:
-		for f in glico_modelb.iglico_modelb(f"{dir}/runs/{keyword}*log.txt"):
+		for f in glob.iglob(f"{dir}/runs/{keyword}*log.txt"):
 			fname = f.split("/")[-1]
 			tmp = fname.split("_")
 			name = '_'.join(tmp[:-1])
@@ -367,7 +369,7 @@ def run_eval_(is_inter=False, debug=False, keyword="", epochs=200, d="", fewshot
 		optimizer = optim.SGD(classifier.parameters(), lr, momentum=0.9, weight_decay=WD, nesterov=True)
 		print("=> Train new classifier")
 		if loss_method == "cosine":
-			criterion = nn.CosineEmbeddinglico_modelss().cuda()
+			criterion = nn.CosineEmbeddingLoss().cuda()
 		else:
 			criterion = nn.CrossEntropyLoss().cuda()
 		num_gpus = torch.cuda.device_count()
