@@ -39,7 +39,7 @@ for SHOTS in 5 10 20 30; do
 echo "glico CUB  samples per class: $SHOTS"
   # train
 
-  s=" train_glico.py --rn d128_v2_0.001bn --d conv --pixel --z_init rndm --resume --tr --data cub --dim 128 --epoch 202 --fewshot --shot ${SHOTS} --seed ${SEED}"
+  s=" train_glico.py --rn my_test --d conv --pixel --z_init rndm --resume --tr --data cub --dim 512 --epoch 202 --fewshot --shot ${SHOTS} --seed ${SEED}"
   python3 $s
   echo $s
 
@@ -47,7 +47,7 @@ echo "glico CUB  samples per class: $SHOTS"
 
   # eval
 
-  s="evaluation.py -d resnet50 --pretrained --keyword  cub_d128_v2_0.001bn_pixel_classifier_tr_fs_${SHOTS}  --is_inter  --augment --epoch 200 --data cub  --fewshot --shot ${SHOTS} --dim 128 --seed ${SEED}"
+  s="evaluation.py -d resnet50 --pretrained --keyword  cub_my_test_10unsuprvised_pixel_classifier_conv_tr_fs_${SHOTS}  --is_inter  --augment --epoch 200 --data cub  --fewshot --shot ${SHOTS} --dim 512 --seed ${SEED}"
   echo $s
   python3 $s
 done
@@ -63,7 +63,7 @@ for SHOTS in 10 25 50 100; do
   echo "glico CIFAR100 samples per classt: $SHOTS"
   # train
 
-  s="train_glico.py --rn  sgd_${UNLABELED}unsuprvised --fewshot --shot $SHOTS --d conv --pixel  --z_init rndm --resume --unlabeled_shot ${UNLABELED} --epoch 202 --noise_proj --tr --seed ${SEED}"
+  s="train_glico.py --rn  my_test_${UNLABELED}unsuprvised --fewshot --shot $SHOTS --d conv --pixel  --z_init rndm --resume --unlabeled_shot ${UNLABELED} --epoch 202 --noise_proj --tr --seed ${SEED} --dim 512"
   echo $s
   python3 $s
 
@@ -71,7 +71,7 @@ for SHOTS in 10 25 50 100; do
 
   # eval
 
-  s="evaluation.py -d wideresnet --keyword cifar-100_sgd_${UNLABELED}unsuprvised_pixel_classifier_tr_fs_${SHOTS}_ce_noise_proj --is_inter --augment --epoch 200 --data cifar --pretrained --fewshot --shot $SHOTS --unlabeled_shot ${UNLABELED} --loss_method ce --seed ${SEED}"
+  s="evaluation.py -d wideresnet --keyword cifar-100_my_test_10unsuprvised_pixel_classifier_conv_tr_fs_${SHOTS}_ce_noise_proj --is_inter --augment --epoch 200 --data cifar --pretrained --fewshot --shot $SHOTS --unlabeled_shot ${UNLABELED} --loss_method ce --seed ${SEED} --dim 512"
   echo $s
   python3 $s
 done

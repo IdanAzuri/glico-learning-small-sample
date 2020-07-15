@@ -91,8 +91,8 @@ if dataset == 'cub':
     # train_repeats = 30 // samples_per_class
     classes = 200
     batch_size = min(args.batch_size, 32)
-    train_labeled_dataset = Cub2011(root=f"data/cub", train=True, split_file=split_file)
-    train_unlabeled_dataset = Cub2011(root=f"data/cub", train=False, split_file=split_file)
+    train_labeled_dataset = Cub2011(root=f"/cs/labs/daphna/idan.azuri/data/cub", train=True, split_file=split_file)
+    train_unlabeled_dataset = Cub2011(root=f"/cs/labs/daphna/idan.azuri/data/cub", train=False, split_file=split_file)
     test_dataset = []
 if dataset == "stl":
     print("STL-10")

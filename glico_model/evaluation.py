@@ -249,7 +249,7 @@ def run_eval_(is_inter=False, debug=False, keyword="", epochs=200, d="", fewshot
 		os.mkdir(dir)
 	logger = Logger(os.path.join(f'{dir}/', f'{title}_log.txt'), title=title)
 	logger.set_names(["valid_acc@1", "valid_acc@5", "test_acc@1", "test_acc@5"])
-	PATH = "/myglico_model/glico_model"
+	PATH = os.getcwd()
 	data_dir = '../../data'
 	cifar_dir_cs = '/cs/dataset/CIFAR/'
 	if data == "cifar":
