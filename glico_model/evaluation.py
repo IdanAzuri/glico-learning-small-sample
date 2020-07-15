@@ -234,7 +234,7 @@ def run_eval_(is_inter=False, debug=False, keyword="", epochs=200, d="", fewshot
               autoaugment=False,
               loss_method="ce", data="cifar", pretrained=False, dim=512, seed=0, cutout=False, random_erase=False,
               lerp=False):
-	glico_modelbal netG, netZ, Zs_real, neigh, aug_param, criterion, aug_param_test
+	global netG, netZ, Zs_real, neigh, aug_param, criterion, aug_param_test
 	manual_seed(seed)
 	title = f"{d}_{keyword}"
 	if fewshot:
