@@ -1,6 +1,20 @@
 
 
 # Generative Latent Implicit Conditional Optimization when Learning from Small Sample
+
+<img src="figs/cifar_inter_v2.png" width="300" /> <img src="figs/cifar10_plot.png" width="400" />
+<figcaption>
+    Left: Examples of synthesized images. (a) Each row shows five new images
+    (the intermediate columns), generated based on smooth interpolation in the
+    latent space between two reconstructed images (the left and right columns).
+
+  Right:Comparison of Top-1 Accuracy (including STE) for CIFAR-10 using
+  WideResnet-28, with a different number of training examples per class (labeled
+  data only). 
+  </figcaption>
+
+
+
 If you find this repository useful in your research, please cite the following paper:
 
 
