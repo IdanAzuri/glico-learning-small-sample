@@ -1,5 +1,8 @@
 
-
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-from-small-data-through-sampling-an/small-data-on-cifar-100-1000-labels-1)](https://paperswithcode.com/sota/small-data-on-cifar-100-1000-labels-1?p=learning-from-small-data-through-sampling-an)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-from-small-data-through-sampling-an/small-data-on-cub-200-2011-30-samples-per-1)](https://paperswithcode.com/sota/small-data-on-cub-200-2011-30-samples-per-1?p=learning-from-small-data-through-sampling-an)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-from-small-data-through-sampling-an/small-data-on-cub-200-2011-5-samples-per-1)](https://paperswithcode.com/sota/small-data-on-cub-200-2011-5-samples-per-1?p=learning-from-small-data-through-sampling-an)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-from-small-data-through-sampling-an/small-data-image-classification-on-cifar-10-1)](https://paperswithcode.com/sota/small-data-image-classification-on-cifar-10-1?p=learning-from-small-data-through-sampling-an)
 # Generative Latent Implicit Conditional Optimization when Learning from Small Sample
 
 
