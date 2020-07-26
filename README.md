@@ -22,14 +22,15 @@ GLICO: Generative Latent Implicit Conditional Optimization when Learning from Sm
 
 
 If you find this repository useful in your research, please cite the following paper:
-@misc{azuri2020generative,
-    title={Generative Latent Implicit Conditional Optimization when Learning from Small Sample},
-    author={Idan Azuri and Daphna Weinshall},
-    year={2020},
-    eprint={2003.14297},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
-}
+
+    @misc{azuri2020generative,
+        title={Generative Latent Implicit Conditional Optimization when Learning from Small Sample},
+        author={Idan Azuri and Daphna Weinshall},
+        year={2020},
+        eprint={2003.14297},
+        archivePrefix={arXiv},
+        primaryClass={cs.LG}
+    }
 
 ## 1. Requirements
 * torch>= 1.3.0
