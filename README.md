@@ -6,7 +6,7 @@
 # Generative Latent Implicit Conditional Optimization when Learning from Small Sample
 [[Paper]](https://arxiv.org/abs/2003.14297)
 
-GLICO: Generative Latent Implicit Conditional Optimization when Learning from Small Sample, preprint 2020 <br>
+GLICO: Generative Latent Implicit Conditional Optimization when Learning from Small Sample, accepted to ICPR 20' <br>
 [Idan Azuri](https://www.linkedin.com/in/idan-a-aa572294/), [Daphna Weinshall](https://www.cse.huji.ac.il/~daphna/) <br>
 
 <img src="figs/cifar_inter_v2.png" width="300" /> <img src="figs/cifar10_plot.png" width="400" />
