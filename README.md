@@ -4,9 +4,9 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-from-small-data-through-sampling-an/small-data-on-cub-200-2011-5-samples-per-1)](https://paperswithcode.com/sota/small-data-on-cub-200-2011-5-samples-per-1?p=learning-from-small-data-through-sampling-an)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-from-small-data-through-sampling-an/small-data-image-classification-on-cifar-10-1)](https://paperswithcode.com/sota/small-data-image-classification-on-cifar-10-1?p=learning-from-small-data-through-sampling-an)
 # Generative Latent Implicit Conditional Optimization when Learning from Small Sample
-[[Paper]](https://arxiv.org/abs/2003.14297)
+[[Paper]](https://arxiv.org/abs/2003.14297) [[Poster]](figs/poster-glico.pdf)
 
-GLICO: Generative Latent Implicit Conditional Optimization when Learning from Small Sample, accepted to ICPR 20' <br>
+GLICO: Generative Latent Implicit Conditional Optimization when Learning from Small Sample, accepted to ICPR 2020 <br>
 [Idan Azuri](https://www.linkedin.com/in/idan-a-aa572294/), [Daphna Weinshall](https://www.cse.huji.ac.il/~daphna/) <br>
 
 <img src="figs/cifar_inter_v2.png" width="300" /> <img src="figs/cifar10_plot.png" width="400" />
