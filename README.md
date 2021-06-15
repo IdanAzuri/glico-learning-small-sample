@@ -23,15 +23,21 @@ GLICO: Generative Latent Implicit Conditional Optimization when Learning from Sm
 
 If you find this repository useful in your research, please cite the following paper:
 
-    @INPROCEEDINGS{9413259,
-    author={Azuri, Idan and Weinshall, Daphna},
-    booktitle={2020 25th International Conference on Pattern Recognition (ICPR)},
-    title={Generative Latent Implicit Conditional Optimization when Learning from Small Sample},
-    year={2021},
-    volume={},
-    number={},
-    pages={8584-8591},
-    doi={10.1109/ICPR48806.2021.9413259}}
+    @INPROCEEDINGS {9413259,
+    author = {I. Azuri and D. Weinshall},
+    booktitle = {2020 25th International Conference on Pattern Recognition (ICPR)},
+    title = {Generative Latent Implicit Conditional Optimization when Learning from Small Sample},
+    year = {2021},
+    volume = {},
+    issn = {1051-4651},
+    pages = {8584-8591},
+    keywords = {training;interpolation;generators;pattern recognition;optimization;image classification},
+    doi = {10.1109/ICPR48806.2021.9413259},
+    url = {https://doi.ieeecomputersociety.org/10.1109/ICPR48806.2021.9413259},
+    publisher = {IEEE Computer Society},
+    address = {Los Alamitos, CA, USA},
+    month = {jan}
+    }
 
 
 ## 1. Requirements
